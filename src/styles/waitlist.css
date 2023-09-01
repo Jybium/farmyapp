@@ -1,0 +1,84 @@
+.container {
+    max-width: 550px;
+    background-color: rgba(0, 0, 0, 0.45);
+    margin: 40px auto;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container1 {
+    max-width: 550px;
+    background-color: var(--color-primary-tint2);
+    margin: 40px auto;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.post_blog {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    /* margin: 20px auto 70px auto; */
+}
+
+.waitlist_post {
+    margin: 15px 0px;
+    text-align: left;
+}
+
+.form_label {
+    width: 50px;
+    font-size: medium;
+    font-weight: bold;
+    padding-right: 10px;
+    
+}
+
+.form_input {
+    padding: 10px;
+    border-radius: 5px;
+    width: 95%;
+    align-self:center;
+}
+
+.pos_bt {
+    background-color: rgb(57,120,70);
+    color: var(--color-grey);
+    width: 95%;
+    padding: 10px 50px;
+    /* float: right; */
+    border-radius: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    /* margin-bottom: 20px; */
+    /* margin-right: 20px; */
+}
+.container2{
+    width: 95%;
+    height: 170px;
+    border: 5px solid var(--color-primary);
+    padding: 4px;
+    border-radius: 10px;
+  }
+
+  .image-preview-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .image-preview {
+    width: 100px; /* Adjust the width of each square image preview */
+    height: 100px; /* Keep the height equal to the width for square appearance */
+    border: 1px solid #ddd;
+    overflow: hidden; /* Hide any excess content */
+  }
+  
+  .image-preview img {
+    width: 100%; /* Make the image fill the container */
+    height: 100%; /* Make the image fill the container */
+    object-fit: cover; /* Maintain aspect ratio and cover container */
+  }

@@ -1,0 +1,27 @@
+.show-counter {
+    display : inline-block;
+    float : Center;
+    width: 60%;
+    font-weight: bolder;
+    font-size: 45px;
+    margin: 20px 50px 50px;
+}
+.countdown {
+    display: inline;
+    color: rgba(255,164,0, 01);
+}
+
+span {
+    color: rgba(255,164,0, 01);
+}
+@media(max-width:768px) {
+    .countdown {
+        display:block;
+    }
+
+    .show-counter {
+        font-weight: bolder;
+        font-size: 40px;
+        margin: 30px;
+    }
+}

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+  margin: 0;
+  font-family: Montserrat,-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: #D9D9D9; */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #397846;
+  --color-primary-shade1: #428747;
+  --color-primary-shade2: #479453;
+  --color-primary-shade3: #56a459;
+  --color-primary-tint1: #57b55e;
+  --color-primary-tint2: #68bf72;
+  --color-primary-tint3: #79c479;
+
+  --color-white: #ffffff;
+
+  --color-secondary: #ffa400;
+  --color-secondary-shade1: #ffb121;
+  --color-secondary-shade2: #ffb833;
+  --color-secondary-shade3: #ffc14f;
+  --color-secondary-tint1: #ffcb69;
+  --color-secondary-tint2: #ffd382;
+  --color-secondary-tint3: #ffdd9e;
+
+  --color-tertiary: #000000;
+  --color-tertiary-shade1: #545454;
+  --color-tertiary-shade2: #707070;
+  --color-tertiary-shade3: #8c8c8c;
+  --color-tertiary-tint1: #a3a3a3;
+  --color-tertiary-tint2: #bdbdbd;
+  --color-tertiary-tint3: #d4d4d4;
+
+  --color-danger-variant: rgb(254, 35, 7);
+  
+
+  --container-width-lg: 80%;
+  --container-width-md: 70%;
+  --container-width-sm: 64%;
+
+  --transition: all 400ms ease;
+}

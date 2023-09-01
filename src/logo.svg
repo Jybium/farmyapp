@@ -1,0 +1,50 @@
+import React, { useState } from 'react';
+import { FaCheck } from 'react-icons/fa'; // Import your desired icon
+
+function DualViewPage() {
+  const [selectedButton, setSelectedButton] = useState('button1'); // Initialize with the default selected button
+
+  const handleButtonSelect = (buttonId) => {
+    setSelectedButton(buttonId);
+  };
+
+  return (
+    <div className="dual-view-container">
+      <div className="button-container">
+        <button
+          className={`toggle-button ${selectedButton === 'button1' ? 'selected' : ''}`}
+          onClick={() => handleButtonSelect('button1')}
+        >
+          Button 1 {selectedButton === 'button1' && <FaCheck />}
+        </button>
+        <button
+          className={`toggle-button ${selectedButton === 'button2' ? 'selected' : ''}`}
+          onClick={() => handleButtonSelect('button2')}
+        >
+          Button 2 {selectedButton === 'button2' && <FaCheck />}
+        </button>
+        <button
+          className={`toggle-button ${selectedButton === 'button3' ? 'selected' : ''}`}
+          onClick={() => handleButtonSelect('button3')}
+        >
+          Button 3 {selectedButton === 'button3' && <FaCheck />}
+        </button>
+        <button
+          className={`toggle-button ${selectedButton === 'button4' ? 'selected' : ''}`}
+          onClick={() => handleButtonSelect('button4')}
+        >
+          Button 4 {selectedButton === 'button4' && <FaCheck />}
+        </button>
+      </div>
+      <div className="content-container">
+        {/* Display content based on selectedButton */}
+        {selectedButton === 'button1' && <p>Content for Button 1</p>}
+        {selectedButton === 'button2' && <p>Content for Button 2</p>}
+        {selectedButton === 'button3' && <p>Content for Button 3</p>}
+        {selectedButton === 'button4' && <p>Content for Button 4</p>}
+      </div>
+    </div>
+  );
+}
+
+export default DualViewPage;
